@@ -10,7 +10,7 @@ RUN echo 'alias gosota="cd /usr/src/sotaoi"' >> ~/.bashrc
 RUN echo 'DEBIAN_FRONTEND=noninteractive' >> /etc/environment
 
 RUN apt-get update
-RUN apt-get install -y nano sudo gpg
+RUN apt-get install -y nano sudo gpg git
 
 EXPOSE 80
 EXPOSE 443
