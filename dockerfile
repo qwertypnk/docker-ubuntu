@@ -9,8 +9,8 @@ RUN echo 'alias gohome="cd /usr/src"' >> ~/.bashrc
 RUN echo 'alias gosota="cd /usr/src/sotaoi"' >> ~/.bashrc
 RUN echo 'DEBIAN_FRONTEND=noninteractive' >> /etc/environment
 
-RUN apt-get update
-RUN apt-get install -y nano sudo gpg git
+RUN apt update
+RUN apt install -y nano sudo gpg git
 
 EXPOSE 80
 EXPOSE 443
