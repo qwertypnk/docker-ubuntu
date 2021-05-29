@@ -12,7 +12,6 @@ RUN echo 'DEBIAN_FRONTEND=noninteractive' >> /etc/environment
 
 RUN apt update
 RUN apt install -y nano sudo gpg git
-RUN echo ${OS_USERNAME}
 
 WORKDIR /${OS_USERNAME}/sotaoi
 
